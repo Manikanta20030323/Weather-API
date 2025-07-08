@@ -1,0 +1,10 @@
+.search-city{
+    transform: scale(0);
+}
+
+.search-city-active{
+    transform: scale(1);
+}
+.tab.curr-Tab{
+    background-color: rgba(219,226,239,0.5);
+}
