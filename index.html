@@ -19,7 +19,7 @@
             <div class="weather-container">
 
                 <!-- grant my location -->
-                 <div class="grantLocation-container">
+                 <div class="grantLocation-container" GrantLocation>
                         <img src="./assets/location.png" height="80" width="80" >
                         <p class="grant_loc-tab1">Grant Location Access</p>
                         <p class="grant_loc-tab2">Allow Access To Get Weather Information</p>
@@ -27,28 +27,37 @@
                  </div>
 
                     <!-- search city -->
-                 <form class="search-city" search-form>
-                    <input type="text" placeholder="Search for City..." >
-                    <button class="but-search">
-                        <img src="./assets/search.png" height="10" width="10">
+                     
+                         <form class="search-city" search-form>
+                    <input type="text" placeholder="Search for City..." search-input class="search-input">
+                    <button class="but-search" type="submit" search-button >
+                        <img src="./assets/search.png" height="18" width="18" class="buttImageofSearch" >
                     </button>
                  </form>
+                     
+                
 
                  <!-- loading -->
                   <div class="loading-container">
                     <img src="./assets/loading.gif" height="150" width="150" >
-                    <p>loading</p>
+                    <p class="centreTextInPara">loading</p>
                   </div>
+
+                  <!-- city not found -->
+                   <div class="city-not-found" cityNotFound id="cityNF">
+                        <img src="./assets/not-found.png" height="250" width="250">
+                        <p class="centreTextInPara">City Not Found</p>
+                   </div>
 
                   <!-- show weather information -->
                    <div class="weather-info">
                         <div class="country-flag-container">
-                            <p data-cityName></p>
+                            <p class="cityname" data-cityName></p>
                             <img data-countryIcon>
                         </div>
-                        <p data-weatherDesc></p>
+                        <p class="weatherDesc" data-weatherDesc></p>
                         <img data-weatherIcon>
-                        <p data-weatherTemp></p>
+                        <p class="temparature" data-weatherTemp></p>
 
                         <div class="parameter-container">
                             <div class="parameter1">
